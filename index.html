@@ -19,6 +19,7 @@
 
 <body>
 
+    <!-- Loader  -->
     <div class="loader">
         <div class="loaderLogo">
             <img src="images/xIcon.png" alt="icon" class="wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1s">
@@ -86,6 +87,7 @@
         </div>
     </div>
 
+    <!-- Quote  -->
     <div class="quote">
         <div class="container">
             <div class="row">
@@ -93,7 +95,7 @@
                     <h2 class=" wow fadeIn"> Are you looking for professional advice for your business or your industry? </h2>
                 </div>
                 <div class="col-12 col-sm-4 col-lg-3">
-                    <a href="contact.html" class="wow fadeIn"> Get Free Quote </a>
+                    <a href="contact.html" class="primaryBtn wow fadeIn"> Get Free Quote </a>
                 </div>
             </div>
         </div>
@@ -141,6 +143,7 @@
         </div>
     </div>
 
+    <!-- Mobile Tabs  -->
     <div class="mobileTabs">
         <a href="#" class="instagram"> <i class="icofont-instagram"></i> <span> instagram </span> </a>
         <a href="#" class="email"> <i class="icofont-email"></i> <span> email </span> </a>
@@ -156,5 +159,21 @@
     <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
     <script src="plugins/animation/wow.min.js"></script>
     <script src="js/custom.js"></script>
+
+    <script type="text/javascript"> 
+        // Show / Hide block img animation 
+        if($('.blocks')){
+            let position = $('.blocks').position();
+            $(window).scroll( function(){
+                let sT =  $('.blocks').offset().top - 500,
+                    wT =  $(this).scrollTop();
+                if ( wT > sT ){
+                    $('.blockTitle').addClass('scrolled');
+                } else {
+                    $('.blockTitle').removeClass('scrolled');
+                }
+            });
+        }     
+    </script>
 </body>
 </html>

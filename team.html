@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icofont.min.css">
+    <link rel="stylesheet" href="plugins/owlCarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/animation/animate.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/xIcon.png" type="image/x-icon" />
+    <title> Intelligent Investment </title>
+</head>
+
+<body>
+
+    <!-- Loader  -->
+    <div class="loader">
+        <div class="loaderLogo">
+            <img src="images/xIcon.png" alt="icon" class="wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1s">
+        </div>
+    </div>
+
+    <!-- Header  -->
+    <div class="header">
+        <div class="container">
+            <div class="headerTop">
+                <a class="logo" href="index.html"> <img src="images/logo.webp" alt="logo" class="img-fluid"> </a>
+                <div class="menuBtn"> <i class="icofont-plus"></i> </div>
+            </div>
+            <div class="navMenu">
+                <ul>
+                    <li> <a href="index.html"> home </a> </li>
+                    <li> <a href="services.html"> our services </a> </li>
+                    <li class="active"> <a href="team.html">  our management team  </a> </li>
+                    <li> <a href="contact.html">  contact us </a> </li>
+                </ul>
+            </div>  
+        </div>       
+    </div>
+    
+    <!-- Vision  -->
+    <div class="vision">
+        <div class="container">
+            <div class="visionWrapper"  onmouseover="Play()" onmouseout="Pause()">
+                <div class="visionHeader">
+                    <h4> our </h4>
+                    <h1> Vision </h1>
+                </div>
+                <div class="poster"> <img src="images/img-6.webp" alt="Video Poster"></div>
+                <video id="visionVideo" loop preload="auto" data-play="hover" muted="muted">
+                    <source src="images/video.mp4" type="video/mp4">
+                    <source src="images/video.ogg" type="video/ogg">
+                    Your browser does not support HTML video.
+                </video>
+                <div class="visionBox">
+                    <h2> OUR   VISION </h2>
+                    <h3> Smart Investment </h3>
+                    <p> Our vision for Smart Investment is diversified in all fields of investment. We link ideas and generations to provide a diversified investment environment. We have the resources to achieve a balance between technolog ical development and direct investment, between e-commerce and traditional trade and also to create innovative and diversified investment ideas.</p>
+                    <h3> Business Development </h3>
+                    <p> Our vision is to create an environment of harmony between the team and projects, creating the operational tools and offering quality in consulting. We conduct a field study and survey, we Business Development. Our vision for analyzing the business position and provide consultancy and services that lead to increasing the profitability of your business or company. We create a harmonious and sophisticated work environment to serve our clients. </p>
+                    <h3> Trading </h3>
+                    <p> Our vision in the concerns of trading is to strengthen domestic, regional and international trade. In particular, we promote confidence among merchants from different countries. We make sure that even from the first deal, the business activities are made in a more confident, smooth and profitable environment and we streamline the business for promoting international trade between countries with international safeguards. It is subject to the rules of the International Chamber of Commerce to safeguard the rights of buyers and ensure the safety of their capital. </p>
+                    <h4> In short, we offer to the business and trade world, a new and sophisticated way of thinking, outside the closed box, that connects the basic rules of business management to technological development.</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <p> ©2019 By Intelligent Investment New Vision </p>
+                </div>  
+                <div class="col-12 col-sm-6 d-xs-none">
+                    <div class="social">
+                        <a href="#"> <i class="icofont-linkedin"></i> </a>
+                        <a href="#"> <i class="icofont-facebook"></i> </a>
+                        <a href="#"> <i class="icofont-instagram"></i> </a>
+                        <a href="#"> <i class="icofont-twitter"></i> </a>
+                    </div>
+                </div>     
+            </div>  
+        </div>
+    </div>
+
+    <!-- Mobile Tabs  -->
+    <div class="mobileTabs">
+        <a href="#" class="instagram"> <i class="icofont-instagram"></i> <span> instagram </span> </a>
+        <a href="#" class="email"> <i class="icofont-email"></i> <span> email </span> </a>
+        <a href="#" class="linkedin"> <i class="icofont-linkedin"></i>  <span> linkedin </span> </a>
+        <a href="#" class="whatsapp"> <i class="icofont-brand-whatsapp"></i> <span> whatsapp </span> </a>
+        <a href="#" class="chat"> <i class="icofont-ui-text-chat"></i> <span> chat </span> </a>
+    </div>
+
+    <!-- JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/owlCarousel/owl.carousel.min.js"></script>
+    <script src="plugins/animation/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script type="text/javascript"> 
+        let video = document.getElementById('visionVideo');
+        function Pause(){ 
+            video.pause(); 
+        }
+        function Play(){
+            if (video.paused) 
+                video.play(); 
+                video.currentTime = 0;    
+        }        
+    </script> 
+
+</body>
+</html>
